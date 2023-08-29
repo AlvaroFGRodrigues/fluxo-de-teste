@@ -17,6 +17,6 @@ class DatabaseSeeder extends Seeder
 
         //lançamentos
 
-        \App\Models\Lancamento::factory('50')->create();
+        \App\Models\Lancamento::factory('150')->create();
     }
 }

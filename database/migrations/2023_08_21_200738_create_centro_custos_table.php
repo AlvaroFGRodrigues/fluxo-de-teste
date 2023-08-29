@@ -18,17 +18,17 @@ return new class extends Migration
             $table->softDeletes();
         });
 
-         \APP\Models\CentroCusto::create([
+         \App\Models\CentroCusto::create([
             'id_centro_custo'=> 1,
             'centro_custo'=>'Alimentação'
         ]);
 
-        \APP\Models\CentroCusto::create([
+        \App\Models\CentroCusto::create([
             'id_centro_custo'=> 2,
             'centro_custo'=>'Transporte'
         ]);
 
-        \APP\Models\CentroCusto::create([
+        \App\Models\CentroCusto::create([
             'id_centro_custo'=> 3,
             'centro_custo'=>'Salario'
         ]);
