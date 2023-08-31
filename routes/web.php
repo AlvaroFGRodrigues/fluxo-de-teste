@@ -35,10 +35,10 @@ Route::prefix('centro-custo')
     Route::get('/', 'index')->name('centro.index');
     Route::get('/novo','create')->name('centro.create');
     Route::get('/editar/{id}','edit')-> name('centro.edit');
-    Route::get('/exibir/{id}', 'show()')-> name('centro.show');
+    Route::get('/exibir/{id}', 'show')-> name('centro.show');
 
     Route::post('cadastrar', 'store')-> name('centro.store');
-    Route::post('atualizar/{id}', 'centro.update')->name('centro.update');
+    Route::post('atualizar/{id}', 'update')->name('centro.update');
     Route::post('excluir/{id}', 'destroy')->name('centro.destroy');
 });
 
@@ -56,7 +56,7 @@ Route::prefix('lancamento')
     Route::get('/', 'index')->name('lancamento.index');
     Route::get('/novo','create')->name('lancamento.create');
     Route::get('/editar/{id}','edit')-> name('lancamento.edit');
-    Route::get('/exibir/{id}', 'show()')-> name('lancamento.show');
+    Route::get('/exibir/{id}', 'show')-> name('lancamento.show');
 
     Route::post('cadastrar', 'store')-> name('lancamento.store');
     Route::post('atualizar/{id}', 'lancamentoupdate')->name('lancamento.update');
