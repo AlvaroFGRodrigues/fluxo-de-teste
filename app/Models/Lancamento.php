@@ -48,8 +48,9 @@ public function centroCusto(){
 
 public function usuario(){
 return $this->belongsTo(User::class,
-'id',
-'id_user');
+
+'id_user',
+'id');
 }
 
 

@@ -51,8 +51,8 @@ class CentroCustoController extends Controller
             'lancamentos.tipo',
             'lancamentos.usuario',
         ])
-        ->find($id)
-        ->paginate(10);
+        ->find($id);
+
         return view('centro.show')
         ->with(compact('centro'));
     }
